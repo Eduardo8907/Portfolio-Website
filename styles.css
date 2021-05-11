@@ -12,7 +12,7 @@ html, body {
 }
 
 #skew1 {
-    background: url(/images/NYCPierView.jpg);
+    background: url(../images/NYCPierView.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: bottom center;
