@@ -15,9 +15,11 @@ iframe {
     height: 100%;
     /* border: none; */
     border: none;
-    /* margin-left: 23%;  */
+     
 }
-
+hr {
+    margin: 2% 0;
+}
 .description {
     text-align: center;
     /* width: 75%; */
