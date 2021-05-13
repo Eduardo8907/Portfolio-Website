@@ -23,3 +23,8 @@ iframe {
     /* width: 75%; */
     padding: 0 5%;
 }
+
+h2 {
+    text-align: center;
+    padding: 0 5%; 
+}
