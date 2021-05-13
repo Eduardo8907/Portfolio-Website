@@ -143,6 +143,9 @@ html, body {
 .column p {
     color: rgba(88, 88, 88, 0.76);
 }
+.row h2 {
+    text-align: center;
+}
 .row::after {
     content: "";
     clear: both;
