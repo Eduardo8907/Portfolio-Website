@@ -16,83 +16,84 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="topnav" id="myTopnav">
-                    <!-- <a class="edu-title" href="index.html">Eduardo <br> Pantaleon</a> -->
-                    <a class="active" href="index.html"> <i class="fa fa-fw fa-home"></i> Home</a>
-                    <a href="#"><i class="far fa-file"></i> Resume</a>
-                    <!-- used to open and close the topnav on small screens -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i></a>
-                
-            </nav>
-        </header>
-       
-        <div id="skew1" class="cus-div">
-            <div class="content">
-                <!-- <iframe src="https://editor.p5js.org/eduardopant/embed/BMIGrhBmh"></iframe> -->
-                <p> Hi, my name is </p>
-                <p> Eduardo Pantaleon</p>
-                <p> I am a programmer and Web Designer</p>
-                <p> I like to make interavtive software</p>
-            </div>
-        </div> <!-- end #skew1 -->
-        <div id="skew2" class="cus-div">
-            <div class="content">
-                <h3>About Me</h3>
-                <p> As a student, I continue to expand and deepen my knowledge in order to gain a diverse skill set. I like web design and I want to build my skill set to allow me to create fun, exciting and appealing experiences. My end goal is to become a game developer and I will get there.</p>
-                <p>On this site you will find some examples of my projects, along with a discription and thought process behind the projects. Below you will find some of my web design and javascript projects.</p>
-            </div>
-        </div><!-- end #skew2-->
-        <div id="skew3" class="cus-div">
-            <div class="content">
-                <h3>Javascript Projects</h3>
-                <p>I love to learn new way I can use code to create art, build games, and interactive experiences. These are some of my selected projects.</p>
-            </div>
-            <div class="thumbnail" >
-                <div class="row">
-                    <h2>Art Projects</h2>
-                    <div class="column">
-                    <a href="generativePatterns.html"><img src="images/generativePattern.png" alt="Generative Pattern">
-                    <figcaption>Generative Grid</figcaption></a>
-                    <p>A grid pattern that changes on the click of the mouse.</p>
-                    </div>
-                    <div class="column">
-                    <a href="circleMadness.html"><img src="images/bubblemash.png  ">
-                    <figcaption>Animated Generative Pattern</figcaption></a>
-                    <p>These are a few examples of how someone can create a "chaotic" scene with shape with just a few lines of code.</p>
-                    </div>
-                    
-                </div>
-        </div>
-        </div> <!-- end #skew3 -->
-        <div id="skew4" class="cus-div">
-            <div class="content">
-                <h3>Web design</h3>
-                <p>Here are some of the websites I created. </p>
-            </div>
-            <div class="thumbnail" >
-                    <div class="row">
-                        <div class="column">
-                        <a href="saa.html"><img src="images/saaWebsiteThumbnail.png" alt="Subway AccessAbility">
-                        <figcaption>Subway AccessAbility Website</figcaption></a>
-                        <p>A website for the Subway AccesAbility Campaign. This campaign advocates construction for more elevators in subways stations. The website provides links to useful resources, updates and news to the public about possible ways they can join in the fight to speed up progress.</p>
-                        </div>
-                        
-                    </div>
-            </div>
-        </div><!-- end #skew4-->
-        <div id="skew5" class="cus-div">
-            <div class="content">
-                <h3>Contact</h3>
-                <p>Want me to help build your website? Perhaps you want to collaberate on a project together? Shoot me a email! </p>
-                <p>Email:<a href="mailto:eduardopant@gmail.com">eduardopant@gmail.com </a>
-                </p>
-                <!-- <p>Instagram: <a href="https://www.instagram.com/EduardosPants/?fbclid=IwAR2ch1i8uCPpzychsxvf-7Fj1PurqIa9ATzbc8OZUjfTf5u8f_aAxgLdetQ">EduardosPants</a></p>
-                <p>Facebook: <a href="https://www.facebook.com/eduardo.pantaleon.77/">eduardo.pantaleon.77</a></p> -->
-            </div>
-        </div> <!-- end #skew5 -->
         
+        <header>
+            <!-- <iframe src="https://editor.p5js.org/eduardopant/embed/BMIGrhBmh"></iframe> -->
+            <h3 id="introLine"> Hello, I'm <span class="spanColor">Eduardo Pantaleon</span>.</h3>
+            <h3 id="introLine2">I'm a full-stack web developer.</h3>
+            <a href="#about"><button>My work</button></a>
+        </header> <!-- /header -->
+        <nav class="topnav" id="myTopnav"> <!-- NAV -->
+            <a class="active" href="#top"> <i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="#about"> About</a>
+            <a href="#projects"> Portfolio</a>
+            <a href="#contact"> Contact</a>
+            
+            <!-- javascript below is used to open and close the topnav on small screens -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </nav> <!-- /nav -->
+        <!-- <section id="about"> ABOUT -->
+                <!-- <h3 >About</h3>
+                <p>I'm currently a Multimedia and Design student at BMCC in New York, NY. I continue to expand and deepen my knowledge in order to gain a diverse skill set. <br>
+                I want to build exciting, appealing designs and create a intuitive, dynamic user experiences. </p> -->
+        <!-- </section>#about -->
+        <section id="projects"> <!-- MY PROJECTS -->
+                <h3>My Projects</h3>
+                    <div class="row"> <!-- .ROW 1 -->
+                        <div class="column"> <!-- .COLUMN 1, DESCRIPTION-->
+                            <h4>Subway AccessAbility Campaign Website Design</h4>
+                            <p class="type">HTML, CSS <br> 2021</p>
+                            <p class="description">A website for the Subway AccesAbility Campaign. This campaign advocates construction for more elevators in subways stations. The website provides links to useful resources, updates and news to the public about possible ways they can join in the fight to speed up progress.</p>
+                            
+                        </div> <!-- .column 1 -->
+                        <div class="column"> <!-- .COLUMN 2, IMAGE-->
+                                <img src="images/saaThumbnail.png" alt="Subway AccessAbility">
+                                <button>Visit Website</button>
+                            <button>View Code</button>
+                        </div> <!-- .column 2 -->     
+                    </div> <!-- first .row -->
+
+                    <div class="row"> <!-- .ROW 2 -->
+                        <div class="column"><!-- .COLUMN 1, DESCRIPTION-->
+                            <h4>14-Key Piano Keyboard</h4>
+                            <p class="type">P5.js <br> 2021</p>
+                            <p class="description">A 14-key piano simulator created in p5.js. If you have a touch screen device, you can press on the piano key, or use your mouse/Keyboard to play a piano key. </p>
+                        </div> <!-- .column -->
+                            
+                        <div class="column"><!-- .COLUMN 2, IMAGE-->
+                                <img src="images/pianoThumbnail.png" alt="pianoKeys">
+                        </div> <!-- . column -->     
+                    </div> <!-- 2nd .row -->   
+        </section><!-- #projects -->
+        <section id="contact"> <!-- #CONTACT -->
+                <h3>Contact</h3>
+                <p>Have a question or want to collaberate? </p>
+                <form action="https://formspree.io/f/xqkwgkpk" method="POST"> <!--   CONTACT FORM -->
+                    <div class="fDiv">
+                        <label class="formLabel">
+                            <input type="fname" name="name" placeholder="Name">
+                        </label>
+                    </div>
+                    <div class="fDiv">
+                        <label class="formLabel">
+                            <input type="email" name="_replyto" placeholder="Email">
+                        </label>
+                    </div>
+                    <div class="fDiv">
+                        <label>
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </label>
+                    </div>
+                        <button type="submit" class="submit">Submit</button>
+                </form>  <!-- /CONTACT FORM -->
+        </section> <!-- #contact -->
+        <footer>
+                Eduardo Pantaleon <span class="spanColor">&copy; 2021</span>
+        </footer>
+        
+
+        <!-- hamburger menu scip for top Nav -->
         <script>
             function myFunction() {
               var x = document.getElementById("myTopnav");
