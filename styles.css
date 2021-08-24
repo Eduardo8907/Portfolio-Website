@@ -72,9 +72,9 @@ page tab will be active
     background-color: #ffdb5b;
     color: black;
 }
-/* .topnav .active {
+.topnav .active {
     color: rgb(196, 24, 130);
-} */
+}
 .topnav .icon { /* Hide links in hamburger menu*/
   display: none;
 }
@@ -227,9 +227,9 @@ the images will stack on top of eachother
     }   
 }
 @media screen and (max-width: 600px) {
-    /* body {
-        font-size: 16px;
-    } */
+    body {
+        font-size: 18px;
+    }
     header {
         padding: 30% 10%;
     }
