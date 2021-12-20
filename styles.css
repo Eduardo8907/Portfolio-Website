@@ -85,7 +85,7 @@ END TOP NAV CSS
 
 
 /* ////////
-SECTION CSS
+BASE CSS
 /////////*/
 section {
     /* width: 100%; */
@@ -118,7 +118,7 @@ h3 { /* SECTION TITLE*/
     background-color: rgb(146, 172, 190);
 }
 /* /////////
-SECTION CSS
+BASE CSS
 //////////*/
 
 
@@ -184,7 +184,7 @@ img{
 /*//////
 CONTACT  
 ///////*/
-.fDiv { /* label */
+.fDiv { /* input box in the footer */
     margin: 2px;
     width: 100%;
 }
