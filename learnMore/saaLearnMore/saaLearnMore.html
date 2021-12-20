@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/saaLearnMore.css">
+    <title>Learn More - Subway Access Ability Website</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Subway AccessAbility Website Thought Process</h1>
+        <h3>ASSIGNMENT DETAILS</h3>
+        <p>In my spring 2021 semester, I was in a team where we built the Subways AccessAbility Campaign, for our multimedia project lab. The project lab’s goal was to work collaboratively to plan, design, and create a complete interactive, multimedia project. Projects had to be drawn from such applications and tools as; media campaigns; information kiosks: websites and mobile apps; physical computing and digital fabrication.</p>
+        <p>For this project, I was in a three person team that was put together by the professor. For our information to be drawn, we decided a website, social media, and QR stickers would be how everyone would access our campaign. The SubwayAccessAbility Campaign is meant to push for more accessibility in NYC subway stations. Together we collaborated on the campaign's idea and name; three ways the campaign could be accessed; logo, QRsticker, and website design; text for our website and social media.</p>
+        <p>I was the team lead and web developer. As team lead, I coordinated with my team to meet deadlines and discuss ideas. Our class was remote so we communicated through text and zoom meetings. We used our zoom meetings to show and discuss the work each person had done. We discussed a few logo and website mockups from which we chose the final product. Before the end of the meeting, I made sure everyone was clear on their task for the week. We met up once in person to take photos we used for the website and social media.</p>
+        <h3>PROJECT INTRO</h3>
+        <p>I built the Subway AccessAbility Campaign website with a mobile-first design.  Each web page has a fluid design to keep it as consistent as possible for various breakpoints. I used the google chrome developer tools to help find those breakpoints. I used media queries to target various screen widths and change the page layout depending on what kind of device you are using. I used “@media only screen and (max-width: 400px)” to display for mobile phones with screens smaller than 400px. Then for mobile devices over 400px I used “min-width”. I used various “min-width” to target viewports ranging from 400px to 1500px and over, making the design accessible to small,medium and large devices.</p>
+        <p>Most of the elements have a percent value to adjust to the screen width. To maintain the elements at a similar ratio, in different screen sizes, I used several media queries to adjust to a screen size. There are ways to give the elements a more concrete size but I really wanted a deeper understanding of media queries and how to work on a fluid design.</p>
+        <p>Due to needing adjustments on specific elements in each page, there are a couple of style sheets. There is a style.css document that holds all the common styling across all HTML pages. Each HTML page has its own CSS sheet to be able to adjust specific elements to that page for different screen sizes. There's also a header.css that adjusts and positions of the header elements, as well as the navigation bar. This header.css made it easier to maintain the design I was going for.</p>
+        <p>I did use my devices as references to design for similar screens. In some of the media queries, I left comments with a specific device and it’s screen dimensions for either portrait or landscape mode. For example, a Galaxy S8+ in landscape mode has the dimensions of 798px X 332px. Other devices I used as reference were the Microsoft Surface 3 and ASUS ROG Zephyrus M15 laptop and their dimensions are commented on in the media query. Being able to have access to these devices helped me keep track of the website's design across different devices.</p>
+        <h3>HEADER/NAVBAR</h3>
+        <p>For the design of the website, we wanted to have a sense of familiarity so we agreed on the color palette of the MTA MetroCard. One of the first things you will notice is that I made the header look similar to the MetroCard’s design. The logo and campaign name are slightly rotated -4 degrees with the transform property. To place the logo image over the campaign name, I gave it a position of relative and used the left and top properties to position it for each breakpoint. Also, inside the header are the social media links that appear below the navigation bar. The links are aligned right and the background for the element is a darker RGB to match that area of the MetroCard. This element is positioned with the top property to best position it across various screen widths.</p>
+        <p>The navigation bar is made responsive with JavaScript that is located towards the bottom of the HTML. When the screen has a min-width of 600px or less, the navigation bar will collapse into a “hamburger” menu. This will happen when the page is viewed on mobile devices or on a tablet in portrait mode.  Located in the head of the document will be a link to load icons for social media and the hamburger menu, the three bars on the right side of the nav bar.</p>
+        <section>
+            <figure class="mobile">
+                <img src="images/header_350px.png" alt="header mobile view">
+                <figcaption>Mobile View</figcaption>
+            </figure>
+            <figure class="tablet">
+                <img src="images/header_601px.png" alt="header tablet view">
+                <figcaption>Tablet View</figcaption>
+            </figure>
+            <figure class="desktop">
+                <img src="images/header_1400px.png" alt="header desktop view">
+                <figcaption>Desktop View</figcaption>
+            </figure>
+        </section>
+        <h3>HTML STRUCTURE/ INTRO IMG AND TEXT</h3>
+        <p>For the structure of the HTML , there are several pieces that remain the same in each document. Each HTML document contains the same Header, Footer, and javascript near the end. Everything between the Header and Footer have similar sections but the content is different. Every page has an image with text over it followed by a yellow and tang section for the content. The image with text over it and content sections are responsive. Each page has different text over the image, but with the exception of the homepage the text is positioned in the same location to keep the design consistent. </p>
+        <p>ocation to keep the design consistent. All images are positioned relative and the text is absolute. The text has a class of either .mainTitle, .subtitle, or .sub2. They will remain the same height in the image for all pages. I positioned them using the property bottom and left to align them. The left property however, increases in value as the screen gets larger. The width of each text is different because they are different in length. The font-size of this text also increases as the devices get larger to provide better legibility. For the text in the homepage image, it is positioned at the bottom of the image and the width of the element is custom to fit the image properly.</p>
+        <p>When viewing on small/medium devices, the image will be the width of the screen. The text over the image will shrink in width to maintain a good proportion to the image depending on the screen. For example, in larger devices the text will be on one line but in smaller devices, that same line can turn into two lines. Two pages also have buttons which are located over the intro image and section above the footer.</p>
+        <section>
+            <figure class="mobile">
+                <img src="images/imageWithTextandButton_350px.png" alt="">
+                <figcaption>Mobile View</figcaption>
+            </figure>
+            <figure class="tablet">
+                <img src="images/imageWithTextandButton_500px.png" alt="">
+                <figcaption>Tablet View</figcaption>
+            </figure>
+            <figure class="desktop">
+                <img src="images/imageWithTextandButton_1000.png" alt="">
+                <figcaption>Desktop View</figcaption>
+            </figure>
+        </section>
+        <h3>YELLOW/TANG SECTIONS</h3>
+        <p>The main content of the pages will be found in the yellow and tang sections. The home and petition pages only have text in those sections. The Learn More and Stories pages have columns to separate the content in the first yellow sections. These columns are responsive and will collapse into one column when it's a smaller screen like a tablet portrait mode. One column holds an image or video and the second column is a title and description for that media. For the two columns to collapse into one requires the screen to be 768px or less. A tablet in portrait mode is an example of when you would see one column.</p>
+        <p>In the tang section of the LearmMore.html, there are four articles which are in one row when viewed on a desktop or laptop. For the figure caption to be legible, the four columns in the row will collapse into two columns when the screen is between 600px and 1200px. For smaller devices, screens less than 600px, the articles columns will collapse into one column. In the Stories page Tang section, is an image with  text wrapping around it when viewed on larger devices like a laptop. When the screen is 768px or less, the image will be centered and the text will be under it.</p>
+        <p>In the stories.html’s tang section, is where the written testimonies of MTA passengers will be located. There will be an image of a person, if they choose to share one, along with their testimony. In larger devices, the text will wrap around the image by having the property of “float: left;”. In medium to smaller devices, the image will move to be above the text.</p>
+        <section>
+            <figure class="mobile">
+                <img src="images/columnMobile.png" alt="">
+                <figcaption>Mobile View</figcaption>
+            </figure>
+            <figure class="tablet">
+                <img src="images/columnTablet.png" alt="">
+                <figcaption>Tablet View</figcaption>
+            </figure>
+            <figure class="desktop">
+                <img src="images/columnDesktop.png" alt="">
+                <figcaption>Desktop View</figcaption>
+            </figure>
+        </section>
+        <section>
+            <figure class="mobile">
+                <img src="images/writtenMobile.png" alt="">
+                <figcaption>Mobile View</figcaption>
+            </figure>
+            <figure class="tablet">
+                <img src="images/writtenTablet.png" alt="">
+                <figcaption>Tablet View</figcaption>
+            </figure>
+            <figure class="desktop">
+                <img src="images/writtenDesktop.png" alt="">
+                <figcaption>Desktop View</figcaption>
+            </figure>
+        </section>
+        <h3>FOOTER</h3>
+        <p>The footer has three blocks which contain the site map links, social media links and a contact email. On larger devices they appear as three columns by making them float left and giving them a width of thirty. On a tablet, for example, in portrait mode or smaller devices they will collapse on top of each other in one column. </p>
+        <section>
+            <figure class="mobile">
+                <img src="/images/footer_350px.png" alt="">
+                <figcaption>Mobile View</figcaption>
+            </figure>
+            <figure class="tablet">
+                <img src="/images/footer_778px.png" alt="">
+                <figcaption>Tablet View</figcaption>
+            </figure>
+            <figure class="desktop">
+                <img src="/images/footer_1400px.png" alt="">
+                <figcaption>Desktop View</figcaption>
+            </figure>
+        </section>
+
+    </div>
+    </body>
+    </html>
