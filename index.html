@@ -19,96 +19,138 @@
 </head>
 <body>
     <div class="wrapper">
-        
-        <header>
-            <!-- <iframe src="https://editor.p5js.org/eduardopant/embed/BMIGrhBmh"></iframe> -->
+        <!-- ==== HEADER START ==== -->
+        <header role="banner">
             <h3 id="introLine"> Hello, I'm <span class="spanColor">Eduardo Pantaleon</span>.</h3>
             <h3 id="introLine2">I'm an aspiring web developer.</h3>
-            <a href="#projects"><button>My work</button></a>
+            <a href="#webDesignProjects"><button>My work</button></a>
         </header> <!-- /header -->
-        <nav class="topnav" id="myTopnav"> <!-- NAV -->
+        <nav class="topnav" id="myTopnav" role="navigation"> <!-- NAV -->
             <a class="active" href="#top"> <i class="fa fa-fw fa-home"></i> Home</a>
             <a href="#about"> About</a>
-            <a href="#projects"> Portfolio</a>
+            <a href="#webDesignProjects"> Portfolio</a>
             <a href="#contact"> Contact</a>
             
             <!-- javascript below is used to open and close the topnav on small screens -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
+            <i class="fa fa-bars"></i></a>
         </nav> <!-- /nav -->
-        <section id="about"> <!-- ABOUT -->
-                 <h3 >About</h3>
-                <p>I'm currently a Multimedia and Design student at BMCC in New York, NY. I continue to expand and deepen my knowledge in order to gain a diverse skill set. <br>
-                I want to build exciting, appealing designs and create a intuitive, dynamic user experiences. </p>
-         </section><!-- #about -->
-        <section id="projects"> <!-- MY PROJECTS -->
-                <h3>My Projects</h3>
-                    <div class="row" id="row1"> <!-- .ROW 1 -->
-                        <div class="column"> <!-- .COLUMN 1, DESCRIPTION-->
-                            <h4>Subway AccessAbility Campaign Website Design</h4>
-                            <p class="type">HTML, CSS <br> 2021</p>
-                            <p class="description">A website for the Subway AccesAbility Campaign. This campaign advocates construction for more elevators in subways stations. The website provides links to useful resources, updates and news to the public about possible ways they can join in the fight to speed up progress.</p>
-                            <a href="https://eduardo8907.github.io/Subway-AccessAbility-Website/"><button>Visit Website</button></a>
-                            <a href="https://github.com/Eduardo8907/Subway-AccessAbility-Website.git"><button>View Code</button></a>
-                            <a href="learnMore/saaLearnMore/saaLearnMore.html"><button>Learn More</button></a>
-                        </div> <!-- .column 1 -->
-                        <div class="column"> <!-- .COLUMN 2, IMAGE-->
-                            <img src="images/saaThumbnail.png" alt="Subway AccessAbility">
-                        </div> <!-- .column 2 -->     
-                    </div> <!-- first .row -->
+        <!-- end header -->
 
-                    <div class="row"> <!-- .ROW 2 -->
-                        <div class="column"><!-- .COLUMN 1, DESCRIPTION-->
-                            <h4>14-Key Piano Keyboard</h4>
-                            <p class="type">P5.js <br> 2021</p>
-                            <p class="description">A 14-key piano simulator created in p5.js. If you have a touch screen device, you can press on the piano key, or use your mouse/Keyboard to play a piano key. </p>
-                            <a href="https://preview.p5js.org/eduardopant/present/HR65fEelj"><button>Try it!</button></a>
-                            <a href="https://editor.p5js.org/eduardopant/sketches/HR65fEelj"><button>View Code</button></a>
-                        </div> <!-- .column -->
-                        <div class="column"><!-- .COLUMN 2, IMAGE-->
-                                <img src="images/pianoThumbnail.png" alt="pianoKeys">
-                        </div> <!-- . column -->     
-                    </div> <!-- 2nd .row -->  
+        <!--  ==== START CONTENT ==== -->
+        <!-- ==== ABOUT SECTION ==== -->
+        <section id="about"> 
+            <h3 >About Me</h3>
+            <p>I majored in Multimedia Programming and Design at Borough of Manhattan Community College. I continue to expand my programming knowledge to gain a diverse skill set. I enjoy Web Design and learning new ways of creating intuitive and appealing websites.</p>
+            <p>I am highly interested in building interactive user experiences. My goal is to become a game developer. As I learn new skills, I will keep adding new projects, Web Design or UI, and evolving my portfolio design.</p>
+        </section>
+        <!-- #about -->
 
-                    <div class="row"> <!-- .ROW 3 -->
-                        <div class="column"><!-- .COLUMN 1, DESCRIPTION-->
-                            <h4>Zombie Jump (In Progress)</h4>
-                            <p class="type">P5.js, Photoshop <br> 2021</p>
-                            <p class="description">A simple but challenging jumping game created using the p5.play library. See how long you can jump on zombies until they eat your brain. All you need is your keyboard to play.</p>
-                            <a href="https://eduardo8907.github.io/Zombie_jump/"><button>Try it!</button></a>
-                            <a href="https://github.com/Eduardo8907/Zombie_jump.git"><button>View Code</button></a>
-                        </div> <!-- .column -->
-                        <div class="column"><!-- .COLUMN 2, IMAGE-->
-                                <img src="images/zombieJump.png" alt="pianoKeys">
-                        </div> <!-- . column -->     
-                    </div> <!-- 3rd .row -->   
-                </section><!-- #projects -->
-        <section id="contact"> <!-- #CONTACT -->
-                <h3>Contact</h3>
-                <p>Have a question or want to collaberate? </p>
-                <form action="https://formspree.io/f/xqkwgkpk" method="POST"> <!--   CONTACT FORM -->
-                    <div class="fDiv">
-                        <label class="formLabel">
-                            <input type="fname" name="name" placeholder="Name">
-                        </label>
-                    </div>
-                    <div class="fDiv">
-                        <label class="formLabel">
+        <!-- ==== WEB DESIGN PROJECTS ===== -->
+        <section id="webDesignProjects"> 
+            <h3>Web Design</h3>
+            <h4>Subway AccessAbility Campaign Website Design</h4>
+            <p class="type">Used HTML, CSS and JavaScript <br> 2021</p>
+                <!-- .ROW 1 -->
+            <div class="row" > 
+                    <!-- .COLUMN 1, IMAGE-->
+                <div class="column"> 
+                    <img src="images/saaThumbnail.png" alt="Subway AccessAbility">
+                </div> 
+                <!-- end column 1 -->     
+                <!-- .COLUMN 2, DESCRIPTION-->
+                <div class="column"> 
+                    <p class="description">I made this website for a class campaign project. I made it with a mobile-first design and used a fluid layout. I used media queries to keep the design as consistent as possible throughout various breakpoints. </p>
+                    <p >You can read more details about the campaign project, and thought process for the design of the website, in the "Learn More" button below.</p>
+                    </div> 
+                <!-- end column 2 -->
+            </div> 
+            <div class="buttons">
+                <a href="https://eduardo8907.github.io/Subway-AccessAbility-Website/"><button>Visit Website</button></a>
+                <a href="https://github.com/Eduardo8907/Subway-AccessAbility-Website.git"><button>View Code</button></a>
+                <a href="learnMore/saaLearnMore/saaLearnMore.html"><button>Learn More</button></a>
+            </div>
+            <!-- end row 1 -->
+        </section>
+        <!-- end web design projects -->
+
+        <!-- ==== JAVASCRIPT PROJECTS ==== -->
+        <section id="javascriptProjects">
+            <h3>JavaScript Projects</h3>
+            <h4>14-Key Piano Keyboard</h4>
+            <p class="type">Used the p5.js Web Editor <br> 2021</p>
+            <!-- .ROW 2 -->
+            <div class="row"> 
+                <!-- .COLUMN 1, IMAGE-->
+                <div class="column">
+                    <img src="images/pianoThumbnail.png" alt="pianoKeys">
+                </div> 
+                <!-- end column1 -->     
+                <!-- .COLUMN 2, DESCRIPTION-->
+                <div class="column">
+                    <p class="description">I made a 14-key piano simulator using the p5.js Web Editor. You can try this on mobile, tablet, or laptop/desktop. </p>
+                    <p>If you have a touch screen device, you can press the piano key by touching the screen. You can also use your mouse or keyboard to play the piano keys. </p>
+                </div> 
+                <!-- end column2 -->
+            </div> <!-- .row/-->
+            <div class="buttons">
+                <a href="https://preview.p5js.org/eduardopant/present/HR65fEelj"><button>Try it!</button></a>
+                <a href="https://editor.p5js.org/eduardopant/sketches/HR65fEelj"><button>View Code</button></a>
+            </div>
+            <!-- end row2 --> 
+            <hr> <!-- to divide projects in this section-->
+            <!-- .ROW 3 -->
+            <h4>Zombie Jump (In Progress)</h4>
+            <p class="type">Used the p5.js Web Editor. Made sprites in Photoshop.<br> 2021</p>
+            <div class="row"> 
+                <!-- .COLUMN 1, IMAGE -->
+                <div class="column">
+                    <img src="images/zombieJump.png" alt="pianoKeys">
+                </div> 
+                <!-- end column1 -->     
+                <!-- .COLUMN 2, DESCRIPTION -->
+                <div class="column">
+                    <p class="description">The current project I am working on is an online jumping game. I am using the p5.play library to create it. I am working on implementing a scoring system and improving controls for my player sprite, and the speed for my zombie sprites. </p>
+                    <p >"See how long you can jump over, or on zombies, until they eat your brains. All you need is your keyboard to play."</p>
+                </div> 
+                <!-- end column2 -->
+            </div> 
+            <div class="buttons">
+                <a href="https://eduardo8907.github.io/Zombie_jump/"><button>Try it!</button></a>
+                <a href="https://github.com/Eduardo8907/Zombie_jump.git"><button>View Code</button></a>
+            </div>
+            <!-- end row3 -->   
+        </section>
+        <!-- end javascript projects section -->
+        <!-- end projects / end content -->
+
+        <!-- ==== #CONTACT ==== -->
+        <section id="contact"> 
+            <form action="https://formspree.io/f/xqkwgkpk" method="POST"> <!--   CONTACT FORM -->
+                <fieldset>
+                    <h3>Contact</h3>
+                    <p>Have a question or comment? Drop a message and I'll get back to you as soon as I can. </p>
+                    <ul>
+                        <li>
+                            <input type="text" name="name" placeholder="Name">
+                        </li>
+                        <li>
                             <input type="email" name="_replyto" placeholder="Email">
-                        </label>
-                    </div>
-                    <div class="fDiv">
-                        <label>
+                        </li>
+                        <li>
                             <textarea name="message" placeholder="Your Message"></textarea>
-                        </label>
-                    </div>
-                        <button type="submit" class="submit">Submit</button>
-                </form>  <!-- /CONTACT FORM -->
-        </section> <!-- #contact -->
+                        </li>
+                    </ul>
+                    <button type="submit" class="submit">Submit</button>
+                </fieldset>
+            </form>  <!-- /CONTACT FORM -->
+        </section> 
+        <!-- end contact -->
+
+        <!-- ==== FOOTER ==== -->
         <footer>
                 Eduardo Pantaleon <span class="spanColor">&copy; 2021</span>
         </footer>
-        
 
         <!-- hamburger menu scip for top Nav -->
         <script>
