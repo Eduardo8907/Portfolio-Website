@@ -1,274 +1,626 @@
 body {
-    width: 100%;
     margin: 0 auto;
-    padding: 0;
-    font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
   }
-
-/* ====  HEADER CSS ==== */
-header {
-    text-align: center;
-    padding: 20%;
-    height: 100vh;
-    background-color: rgb(146, 172, 190);
-}  
-#introLine {
-    font-size: 35px;
-    color: white;
-    font-weight:600;
-    font-family:sans-serif;
-    text-decoration: none;
-    margin: 0;
-}
-#introLine2 {
-    font-size: 35px;
-    color: white;
-    font-weight:600;
-    text-decoration: none;
-    margin: 0 0 2% 0;
-}
-header a button{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: inherit;
-    color: white;
-}
-.spanColor { 
-    color: rgb(196, 24, 130); /* my name color in header */
-}
-/*  
-TOP NAV CSS 
-page tab will be active
-*/
-.topnav  {
-    overflow: auto;
-    background-color: #000000;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-.topnav  a {
-    float: left;
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.topnav a:hover {
-    background-color: #ffdb5b;
-    color: black;
-}
-.topnav .active {
-    color: rgb(196, 24, 130);
-}
-.topnav .icon { /* Hide links in hamburger menu*/
-    display: none;
-}
-/*
-end top nav css
-end header css 
-*/
 
 
 /* ==== BASE CSS ==== */
-section {
-    margin: 0;
-    text-align: center;
+/* hover over links */
+a {
+    text-decoration: none;
 }
-section p {
-    text-align: left;
+/*all buttons and the submit form button do this on mouse hover*/
+a button:hover{ 
+    background-color: lightgrey;
+    color: rgb(196, 24, 130);
 }
-h3 { /* SECTION TITLE*/
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+.topnav a:hover, button, footer a:hover {
+    background-color: transparent;
+    color: rgb(196, 24, 130);
+    /* color: rgb(250, 128, 114);salmon pink */
 }
-h4 { /* PROJECT TITLE */
-    margin: 0;
-    padding: 5px;
-    text-decoration: underline 1px ;
+.active {
+    color: rgb(196, 24, 130);
+    /* color: rgb(250, 128, 114);salmon pink */
+    font-weight: 700;
 }
-img{
-    width: 100%;
-    border: 1px solid rgb(218, 218, 218);
-}
-.submit:hover, a button:hover{ /*all buttons and the submit form button do this on mouse hover*/
-    background-color: #ffdb5b;
-    color: black;
-}
-#about p, .column p { /* for paragraph line spacing */
-    line-height: 1.5em;
-}
-#about, #webDesignProjects, #javascriptProjects {
-    background-color: rgb(227, 228, 228);
-    padding: 5% 10%;
-}
-#webDesignProjects, #javascriptProjects {
-    /*  */
-    border-top: 1px solid gray;
-}
-/*
-end base css
-*/
+/* -end base CSS- */
 
-/* ==== MY PROJECTS SECTION ==== */
-.row:after {
-    content: "";
+/* ====  HEADER CSS ==== */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
     display: table;
-    clear: both;
+    font-size: 0;
+    top: 0;
 }
-.type { /* what i used to make it */
-    color: rgb(102, 101, 101);
+.header_content {
+    /* background-color: black; */
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 20px 0px 0 0;
+}
+#logo {
+    width: 340px;
+    height: 50px;
+    float: left;
+    margin-left: 70px;
+    display: flex;
+}
+/* my name. top right corner.  */
+.logo {
+    color: #3b3b3b;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/* -Top Nav CSS- */
+.topnav  {
+    /* width: 100%; */
+    /* border: solid; */
+    overflow: hidden;
+    float: right;
+    /* padding: 2px 0; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* display: table-cell; */
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    /* margin: 14px 16px; */
+    /* margin: 20px; */
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .topIcons {
+      /* width: 100%; */
+      float: right;
+      /* display: flex; */
+      /* margin: 0; */
+  }
+
+/* top navigation list items */
+.active, .nav_list_item {
+    /* float: none; */
+    /* float: left;
+    display: block;
+    text-align: center;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 14px; */
+    /* border: solid; */
+    /* list-style:none ; */
+    
+    /* color: black; */
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    /* list-style: none; */
+}
+/* top and bottom icons */
+.social_icons {
+    /* border: solid; */
+    /* margin:  0px; */
+    font-size: 15px;
+    /* border-width: 0px; */
+    /* padding: 0; */
+    /* display: block; */
+}
+.nav_list_item {
+    /* color: black; */
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon { 
+    display: none;
+    /* color: black; */
+}
+/* -end top nav CSS- */
+/* ==== end header CSS ==== */
+
+
+
+
+
+
+/* .active, .nav_list_item {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 14px;
+} */
+
+/* === TOP INTRO === */
+/* places section.intro , right below the header */
+.intro {
+    margin-top: 12%;
+    height: 90vh;
+}
+.top_greeting {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #3b3b3b;
+}
+.top_introduction {
+    width: 639px;
+    height: 110px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #3b3b3b;
+    margin: 20px auto 40px;
+}
+.arrow {
+    width: 220px;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
+    margin:  0 auto; 
+}
+.arrow i {
+    border: solid #3b3b3b;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/* ====  end top intro css ==== */
+
+/* ==== PROJECT SECTION ==== */
+#projects_section {
+    width: 100%;
+    height: 100%;
+    padding: 3% 10% 5% 10%;
+    /* border:solid ; */
+}
+.projects {
+    padding-top: 30px;
+    /* border: solid red; */
+}
+/* type of projects header */
+h3 { 
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-size: 30px;
     text-align: center;
 }
-.description { /* brief description of project*/
-    margin-top: 0;
+.js_projects {
+    padding-top: 10px;
 }
-.buttons button, .submit, header button {
-    /* all buttons contain this appearance */
-    background: rgb(241, 241, 241);
-    color: rgb(196, 24, 130);
-    font-size: 18px;
-    border: none;
-    border-radius: 5%;
-    box-shadow: 4px 4px 4px #333;
+/* projects */
+.project {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    border-bottom: 2px lightgrey solid;
 }
-/*
-end my project section
-*/
-
-/* ==== CONTACT SECTION ==== */
-fieldset {
-    border: none;
-    overflow: hidden;
-    padding:  10%;
+/* removes bottom border for last project */
+.last {
+    border-bottom:  none;
 }
-ul {
-    list-style: none;
+/* image side */
+img {
+    vertical-align: middle;
+    border-style: none;
 }
-input, textarea {
-    margin-left: -40px;
+.project_image {
+    width: 40%;
+    height: 40%;
+    padding: 3%;
+    margin-right: 5%;
+}
+.image {
     width: 100%;
 }
-textarea {
-    height: 100px;
+/* project description side */
+.project_description {
+    width: 60%;
+    padding: 3% 3% 0 0;
 }
-#contact {
-    height: 90vh;
-    background-color: rgb(146, 172, 190);    
+.project_title {
+    font-size: 25px;
+    font-weight: 500;
 }
-#contact p {
-    text-align: center;
+.project_category {
+    margin-top: 1%;
 }
-/* contact button */
-.submit {
-    background-color: rgb(252, 245, 245);
-    border: 1px solid #000000;
+.project_category span {
+    width: auto;
+    height: auto;
+    background-color: rgb(221, 219, 219);
     color: rgb(196, 24, 130);
+    padding: 0.5% 1%;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0 1% 1% 0;
+    letter-spacing: 0;
 }
-/* end contact */
+.brief_description {
+    width: 100%;
+    padding: 3% 0;
+    text-align: justify;
+    font-size: 14.4px;
+    line-height: 1.9;
+}
+/* all buttons contain this appearance */
+.buttons {
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 30px;
+}
+.buttons button {
+    width: 40%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: 0.5px solid #3b3b3b;
+    box-shadow: 4px 4px 4px #333;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+/* ==== end projects section ==== */
+
 
 /* ==== FOOTER SECTION ==== */
 footer {
-    background-color: rgb(0, 0, 0);
     text-align: center;
-    padding: 2%;
-    color: rgb(95, 95, 95);
+    display: flexbox;
+    margin-left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 2% 10% 0% 5%;
+    background-color: #3b3b3b;
+    color: white;
+    font-size: 14px;
+    /* border: solid aqua; */
 }
-/* end footer */
+footer .social_icons {
+    color: white;
+    margin-right: 2%;
+}
+.footer_right,
+.footer_left {
+    width: 45%;
+    height: 10px;
+    display: inline;
+    /* color: white; */
+}
+.footer_right {
+    float: right;
+    margin: 0;
+    text-align: right;
+}
+/* ==== end footer ==== */
+
+
+
 
 /* ==== MEDIA QUERIES TO VIEW ON DIFFERENT DEVICES ====*/
-/* nav media Query */
-@media screen and (max-width: 600px) {
-    .topnav  a:not(:first-child) {display: none;}
+/* ==== Responsive Top Nav Bar CSS ==== */
+@media screen and (max-width: 716px) {
+    .topnav  a {
+        display: none;
+        padding-top: 20px;
+
+    }
+    .topnav .active {
+        padding-top: 80px;
+    }
     .topnav a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
+        
+    }
+    .logo {
+        z-index: 1;
+    }
+    
+    .topnav {
+        /* z-index: 999; */
+        float: none;
+        position: relative;
+        bottom: 60px;
+        padding-bottom: 24px;
+        /* padding-top: 30px; */
+        width: 100%;
+        /* height: 600px; */
+        background-color:white;
+        overflow: hidden;
+        clear: both;
+        /* border-style: dashed; */
+    }
+    /* link starts below logo so that in wont mess with the flow */
+    .active {
+        clear: both;
+    }
+    a.nav_list_item, a.active {
+        padding-bottom: 40px;
+    }
+    .topIcons {
+        /* border: dotted; */
+        width: 100%;
+        float: none;
+        display: flex;
+        padding: 0 33.33% ;
+        margin-bottom: 0px;
+    }
+    nav .social_icons {
+        width: 100%;
+        margin: 0 2%;
+        padding-bottom: 150px;
+        /* border: solid; */
+    }
+    footer .social_icons {
+        margin-right: 2%;
+        width: 100%;
+        margin-bottom: 2%;
     }
   }
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: -webkit-sticky;
-        position: sticky;}
-    .topnav.responsive .icon {
+@media screen and (max-width: 716px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-.topnav.responsive  a {
+    .topnav.responsive  a {
       float: none;
       display: block;
       text-align: center;
+      
     }
 } 
-/* MOBILE less then 400px */
-@media screen and (max-width: 400px){
+/* end responsive top nav bar css */
+
+
+
+
+
+
+/* (MAX-WIDTH: 600PX) */
+@media screen and (max-width: 600px) {
     header {
-        padding-top: 40%;
-    }
-    header a button, .submit {
-        width: 60%;
-        height: 40px;
-    }
-    a button { 
         width: 100%;
+        height: 70px;
+    }
+    .header_content {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        position: absolute;     
+    }
+    #logo {
+        width: 250px;
         height: 40px;
-        margin: 2%;
+        margin-left: 10px;
+        padding-left: 8px;
+        position: relative;
+        float: left;
     }
-    input, textarea {
-        margin-bottom: 1%;
+    .logo {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-top: 3px;
     }
-}
-/* MOBILE screens bigger then 400px */
-@media screen and (min-width: 400px) {
-    header a button, .submit{
-        width: 40%;
-        height: 40px;
+    
+    /* projects */
+    .projects {
+        width: 100%;
+        height: 100%;
+        padding: 20% 10% 15%;
     }
-    .buttons button {
-        width: 90%;
-        height: 40px;
-        margin: 2%;
-    }
-    fieldset {
+    .project {
+        text-align: center;
         width: 80%;
-        margin: 0 10% 0 10%;
+        margin: 2% auto;
+        display: block;
     }
-    input {
-        margin-bottom: 1%;
+    .project_image {
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+        margin-right: 5%;
     }
-}
-/*
-if the width goes below 768px 
-the images will stack on top of eachother 
-ipad portrait 768px
- */
-@media screen and (min-width: 768px) {
-    /* TABLET AND BIGGER DEVICES STYLES */
-    #about {
-        padding: 3% 25%;
+    .project_description {
+        width: 100%;
     }
-    .row { 
-        display: flex; 
+    .project_title {
+        font-weight: 700;
+        font-size: 19px;
+    }
+    .project_category {
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .project_category span {
+        letter-spacing: 0px;
+        padding-left: 2% 3%;
+        margin-left: 5px;
+    }
+    .brief_description {
+        font-size: 12px;
     }
     .buttons {
-        margin-bottom: 2% ;
+        margin-top: 15px;
+        margin-bottom: 30px;
     }
     .buttons button {
-        width: 25%;
-
-    }
-    .column {
-        width: 50%;
-        margin: 2%;
-    }
-    fieldset {
-        width: 70%;
-        margin: 0 15% 0 15%;
+        width: 100%;
+        margin: 2% 0 5% 0;
+        font-size: 14px;
     }
 }
-/* end medai queries */
+/* end (max-width:600) */
+/* (MIN-WIDTH:600PX) AND (MAX-WIDTH:768PX) */
+@media (min-width:600px) and (max-width:768px) {
+    header {
+        width: 100%;
+        height: 80px;
+    }
+    .header_content {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        position: absolute;     
+    }
+    #logo {
+        width: 250px;
+        height: 40px;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        padding-left: 8px;
+    }
+    .logo {
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+    .buttons {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .buttons button {
+        width: 110px;
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+   
+}
+/* (MAX-WIDTH:767PX)
+    .TOP_GREETING,FOOTER */
+@media screen and (max-width: 767px) {
+
+    .top_greeting {
+        width: 100%;
+        height: 32px;
+        margin-top: 15%;
+        font-size: 22px;
+        font-weight: 700; 
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .top_introduction {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+        line-height: 1.8;
+        text-align: center;
+        margin: 50px auto 100px;
+        padding: 0 40px ;
+    }
+    footer {
+        /* border: solid red; */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        padding: 1% ;
+        font-size: 14px;
+    }
+    p.footer_left {
+        margin-bottom: 15px;
+    }
+    P.footer_right{
+        margin-bottom: 0%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer_right,
+    .footer_left {
+        width: 100%;
+        height: 20px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top_greeting {
+        width: 100%;
+        height: 32px;
+        margin-top: 80px;
+        font-size: 22px;
+        font-weight: 700; 
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    
+}
+/* (MIN-WIDTH:768PX) AND (MAX-WIDTH:1024PX) */
+@media (min-width:768px) and (max-width:1024px) {
+    header {
+        width: 100%;
+        height: 70px;
+    }
+    .header_content {
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        position: absolute;     
+    }
+    #logo{
+        width: 300px;
+        height: 40px;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        padding-left: 8px;
+
+    }
+    .logo {
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: 1.4px;
+        margin-left: 10px;
+    }
+    .buttons {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .buttons button {
+        width: 40%;
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+}

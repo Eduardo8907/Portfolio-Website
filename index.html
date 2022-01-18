@@ -7,163 +7,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduardo Pantaleon : Project Portfolio</title>
+    <title>Eduardo's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- icon library to show a hamburger menu on small screens -->
+    <!-- my font code from font awesome. can get your code by signing up for an accont at font awesome. -->
+    <script src="https://kit.fontawesome.com/9025e2729f.js" crossorigin="anonymous"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- script for icons -->
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
     <!--[if lt IE 9]>
-	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-<![endif]-->
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <div class="wrapper">
-        <!-- ==== HEADER START ==== -->
-        <header role="banner">
-            <h3 id="introLine"> Hello, I'm <span class="spanColor">Eduardo Pantaleon</span>.</h3>
-            <h3 id="introLine2">I'm an aspiring web developer.</h3>
-            <a href="#webDesignProjects"><button>My work</button></a>
-        </header> <!-- /header -->
-        <nav class="topnav" id="myTopnav" role="navigation"> <!-- NAV -->
-            <a class="active" href="#top"> <i class="fa fa-fw fa-home"></i> Home</a>
-            <a href="#about"> About</a>
-            <a href="#webDesignProjects"> Portfolio</a>
-            <a href="#contact"> Contact</a>
-            
-            <!-- javascript below is used to open and close the topnav on small screens -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>
-        </nav> <!-- /nav -->
-        <!-- end header -->
+    <!-- ==== TOP NAV ===== -->
+    <header role="banner">
+        <div class="header_content">
+            <a href="#">
+                <div id="logo">
+                    <span class="logo">Eduardo Pantaleon</span>
+                </div>
+            </a>
+            <nav class="topnav" id="myTopnav" role="navigation">
+                <!-- <a href="#down" class="active">Portfolio</a> -->
+                <!-- <a href="#about" class="nav_list_item">About</a> -->
+                <!-- <a href="#" class="nav_list_item">Resume</a> -->
+                <!-- <a href="#contact" class="nav_list_item">Contact</a> -->
 
-        <!--  ==== START CONTENT ==== -->
-        <!-- ==== ABOUT SECTION ==== -->
-        <section id="about"> 
-            <h3 >About Me</h3>
-            <p>I majored in Multimedia Programming and Design at Borough of Manhattan Community College. I continue to expand my programming knowledge to gain a diverse skill set. I enjoy Web Design and learning new ways of creating intuitive and appealing websites.</p>
-            <p>I am highly interested in building interactive user experiences. My goal is to become a game developer. As I learn new skills, I will keep adding new projects, Web Design or UI, and evolving my portfolio design.</p>
-        </section>
-        <!-- #about -->
+                <div class="topIcons">
+                    <!-- envelope icon -->
+                    <!-- <a href="#" class="social_icons topIcons"><i class="fas fa-envelope"></i></a> -->
+                    <!-- linkedIn icon -->
+                    <!-- <a href="https://www.linkedin.com/in/eduardo-pantaleon-227b4b222" class="social_icons topIcons"><i class="fab fa-linkedin"></i></a> -->
+                </div>
+                     
+                <!-- javascript below is used to open and close the topnav on small screens -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </nav>            
+        </div> 
+        <!-- /.header_content -->
+    </header> 
+    <!-- ==== end top nav ==== -->
 
-        <!-- ==== WEB DESIGN PROJECTS ===== -->
-        <section id="webDesignProjects"> 
-            <h3>Web Design</h3>
-            <h4>Subway AccessAbility Campaign Website Design</h4>
-            <p class="type">Used HTML, CSS and JavaScript <br> 2021</p>
-                <!-- .ROW 1 -->
-            <div class="row" > 
-                    <!-- .COLUMN 1, IMAGE-->
-                <div class="column"> 
-                    <img src="images/saaThumbnail.png" alt="Subway AccessAbility">
-                </div> 
-                <!-- end column 1 -->     
-                <!-- .COLUMN 2, DESCRIPTION-->
-                <div class="column"> 
-                    <p class="description">I made this website for a class campaign project. I made it with a mobile-first design and used a fluid layout. I used media queries to keep the design as consistent as possible throughout various breakpoints. </p>
-                    <p >You can read more details about the campaign project, and thought process for the design of the website, in the "Learn More" button below.</p>
-                    </div> 
-                <!-- end column 2 -->
+    <!-- ==== INTRO / GREETING SECTION ==== -->
+   <section class="intro">
+       <!-- <div class="profile_image"></div>  -->
+       <div class="top_greeting">Hello, I'm Eduardo. </div>
+       <div class="top_introduction">
+            <p>I am an <b>aspiring full-stack web developer</b> based in Queens, New York. I enjoy building websites with a mobile-first design but I am passionate about creating great interactive web experiences.</p> 
+            <!-- <p>View My Recent Projects</p> -->
+            <!-- <p>Drop a comment or get in touch for front-end design work! </p> -->
+            <!-- <p>Message me!</p> -->    
+        </div>
+        <div class="arrow">
+            <a href="#projects_section">
+                <div>
+                    <span>View My Recent Projects</span>
+                    <br>
+                    <i id="down" class="down"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- ==== end intro / greeting section ==== -->
+    
+    <!-- ==== PROJECTS ===== -->
+    <section class="projects" id="projects_section">
+
+        <!-- Web Design Projects -->
+        <h3 class="">Web Design</h3>
+        <!-- resposive campaign website -->
+        <section class="project">
+            <!-- image -->
+            <div class="project_image"> 
+                <img class="image" src="images/saaThumbnail.png" alt="Subway AccessAbility">
             </div> 
-            <div class="buttons">
-                <a href="https://eduardo8907.github.io/Subway-AccessAbility-Website/"><button>Visit Website</button></a>
-                <a href="https://github.com/Eduardo8907/Subway-AccessAbility-Website.git"><button>View Code</button></a>
-                <a href="learnMore/saaLearnMore/saaLearnMore.html"><button>Learn More</button></a>
+            <!-- description -->
+            <div class="project_description">
+                <div class="project_title">Subway AccessAbility Campaign Website Design</div>
+                <div class="project_category"><span>HTML5</span><span>CSS</span><span>JavaScript</span> </div>
+                <div class="brief_description">
+                I made this website for a class campaign project. I made it with a mobile-first design and used a fluid layout. I used media queries to keep the design as consistent as possible throughout various breakpoints. You can read more details about the campaign project, and thought process for the design of the website, in the "Learn More" button below.
+                </div>
+                <!-- buttons -->
+                <div class="buttons center">
+                    <a href="https://eduardo8907.github.io/Subway-AccessAbility-Website/"><button>Visit Website</button></a>
+                    <a href="https://github.com/Eduardo8907/Subway-AccessAbility-Website.git"><button>View Code</button></a>
+                    <!-- <a href="learnMore/saaLearnMore/saaLearnMore.html"><button>Learn More</button></a> -->
+                </div>
             </div>
-            <!-- end row 1 -->
         </section>
-        <!-- end web design projects -->
+        <!-- /resposive campaign website -->
 
-        <!-- ==== JAVASCRIPT PROJECTS ==== -->
-        <section id="javascriptProjects">
-            <h3>JavaScript Projects</h3>
-            <h4>14-Key Piano Keyboard</h4>
-            <p class="type">Used the p5.js Web Editor <br> 2021</p>
-            <!-- .ROW 2 -->
-            <div class="row"> 
-                <!-- .COLUMN 1, IMAGE-->
-                <div class="column">
-                    <img src="images/pianoThumbnail.png" alt="pianoKeys">
-                </div> 
-                <!-- end column1 -->     
-                <!-- .COLUMN 2, DESCRIPTION-->
-                <div class="column">
-                    <p class="description">I made a 14-key piano simulator using the p5.js Web Editor. You can try this on mobile, tablet, or laptop/desktop. </p>
-                    <p>If you have a touch screen device, you can press the piano key by touching the screen. You can also use your mouse or keyboard to play the piano keys. </p>
-                </div> 
-                <!-- end column2 -->
-            </div> <!-- .row/-->
-            <div class="buttons">
-                <a href="https://preview.p5js.org/eduardopant/present/HR65fEelj"><button>Try it!</button></a>
-                <a href="https://editor.p5js.org/eduardopant/sketches/HR65fEelj"><button>View Code</button></a>
-            </div>
-            <!-- end row2 --> 
-            <hr> <!-- to divide projects in this section-->
-            <!-- .ROW 3 -->
-            <h4>Zombie Jump (In Progress)</h4>
-            <p class="type">Used the p5.js Web Editor. Made sprites in Photoshop.<br> 2021</p>
-            <div class="row"> 
-                <!-- .COLUMN 1, IMAGE -->
-                <div class="column">
-                    <img src="images/zombieJump.png" alt="pianoKeys">
-                </div> 
-                <!-- end column1 -->     
-                <!-- .COLUMN 2, DESCRIPTION -->
-                <div class="column">
-                    <p class="description">The current project I am working on is an online jumping game. I am using the p5.play library to create it. I am working on implementing a scoring system and improving controls for my player sprite, and the speed for my zombie sprites. </p>
-                    <p >"See how long you can jump over, or on zombies, until they eat your brains. All you need is your keyboard to play."</p>
-                </div> 
-                <!-- end column2 -->
+        <!-- Javascript Projects -->
+        <h3 class="js_projects">JavaScript Projects</h3>
+        <!-- piano keyboard simulator -->
+        <section class="project">
+            <!-- image -->
+            <div class="project_image"> 
+                <img class="image" src="images/pianoThumbnail.png" alt="pianoKeys">
             </div> 
-            <div class="buttons">
-                <a href="https://eduardo8907.github.io/Zombie_jump/"><button>Try it!</button></a>
-                <a href="https://github.com/Eduardo8907/Zombie_jump.git"><button>View Code</button></a>
+            <!-- description -->
+            <div class="project_description">
+                <div class="project_title">14-Key Piano Keyboard</div>
+                <div class="project_category"><span>p5.js Web Editor</span></div>
+                <div class="brief_description">
+                    I made a 14-key piano simulator using the p5.js Web Editor. You can try this on mobile, tablet, or laptop/desktop. 
+                    If you have a touch screen device, you can press the piano key by touching the screen. You can also use your mouse or keyboard to play the piano keys. 
+                </div>
+                <!-- buttons -->
+                <div class="buttons center">
+                    <a href="https://preview.p5js.org/eduardopant/present/HR65fEelj"><button>Test it out!</button></a>
+                    <a href="https://editor.p5js.org/eduardopant/sketches/HR65fEelj"><button>View Code</button></a>
+                </div>
             </div>
-            <!-- end row3 -->   
         </section>
-        <!-- end javascript projects section -->
-        <!-- end projects / end content -->
+        <!-- /piano keyboard simulator -->
+        <!-- Zombie Jump Game -->
+        <section class="project last">
+            <!-- image -->
+            <div class="project_image"> 
+                <img class="image" src="images/zombieJump.png" alt="Zombie Jump Game">
+            </div> 
+            <!-- description -->
+            <div class="project_description">
+                <div class="project_title">Zombie Jump (In Progress)</div>
+                <div class="project_category"><span>p5.js Web Editor</span> <span>Photoshop</span></div>
+                <div class="brief_description">
+                    The current project I am working on is an online jumping game. I am using the p5.play library to create it. I am working on implementing a scoring system and improving controls for my player sprite, and the speed for my zombie sprites.
+                    "See how long you can jump over, or on zombies, until they eat your brains. All you need is your keyboard to play."
+                </div>
+                <!-- buttons -->
+                <div class="buttons center">
+                    <a href="https://eduardo8907.github.io/Zombie_jump/"><button>Try it!</button></a>
+                    <a href="https://github.com/Eduardo8907/Zombie_jump.git"><button>View Code</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- /zombie jump -->
+      
+    </section>
+    <!-- /#project_section -->
 
-        <!-- ==== #CONTACT ==== -->
-        <section id="contact"> 
-            <form action="https://formspree.io/f/xqkwgkpk" method="POST"> <!--   CONTACT FORM -->
-                <fieldset>
-                    <h3>Contact</h3>
-                    <p>Have a question or comment? Drop a message and I'll get back to you as soon as I can. </p>
-                    <ul>
-                        <li>
-                            <input type="text" name="name" placeholder="Name">
-                        </li>
-                        <li>
-                            <input type="email" name="_replyto" placeholder="Email">
-                        </li>
-                        <li>
-                            <textarea name="message" placeholder="Your Message"></textarea>
-                        </li>
-                    </ul>
-                    <button type="submit" class="submit">Submit</button>
-                </fieldset>
-            </form>  <!-- /CONTACT FORM -->
-        </section> 
-        <!-- end contact -->
-
-        <!-- ==== FOOTER ==== -->
-        <footer>
-                Eduardo Pantaleon <span class="spanColor">&copy; 2021</span>
-        </footer>
-
-        <!-- hamburger menu scip for top Nav -->
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
+    <!-- ==== FOOTER ==== -->
+    <footer>
+        <p class="footer_left">Designed and developed by Eduardo Pantaleon &copy; 2022</p>
+        <p class="footer_right">
+            <!-- <a href="#" class="social_icons"><i class="fas fa-envelope"></i></a> -->
+        <!-- </a href="https://www.linkedin.com/in/eduardo-pantaleon-227b4b222" class="social_icons" ><i class="fab fa-linkedin-in"></i></a>    -->
+        </p>
+    </footer>
+    <!-- ==== /footer ==== -->
+    <!-- hamburger menu script for top Nav -->
+    <script>
+         function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
                 x.className += " responsive";
               } else {
                 x.className = "topnav";
               }
             }
-            </script>
-            
-    </div> <!-- end .wrapper -->
+    </script> 
 </body>
 </html>
