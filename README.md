@@ -1,2 +1,2 @@
 # Portfolio-Website
- Portfolio with some of my projects
+My portfolio website with some of my projects.
